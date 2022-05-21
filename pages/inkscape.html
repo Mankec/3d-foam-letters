@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>3D slova</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="/assets/css/main.css"
+    />
+  </head>
+
+  <header><nav class="bg-red-100 px-2 sm:px-4 py-2.5">
+  <div class="container flex flex-wrap justify-end items-center mx-auto p-6">
+    <button
+      data-collapse-toggle="mobile-menu"
+      type="button"
+      class="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+      aria-controls="mobile-menu"
+      aria-expanded="false"
+    >
+      <span class="sr-only">Open main menu</span>
+      <svg
+        class="w-6 h-6"
+        fill="currentColor"
+        viewBox="0 0 20 20"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          fill-rule="evenodd"
+          d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+          clip-rule="evenodd"
+        ></path>
+      </svg>
+      <svg
+        class="hidden w-6 h-6"
+        fill="currentColor"
+        viewBox="0 0 20 20"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          fill-rule="evenodd"
+          d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+          clip-rule="evenodd"
+        ></path>
+      </svg>
+    </button>
+    <div class="hidden w-full md:block md:w-auto" id="mobile-menu">
+      <ul
+        class="flex flex-col mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium"
+      >
+        <li class="">
+          <a
+            href="/pages/gimp.html"
+            class="text-xl hover:text-red-600 font-black p-4 ease-in duration-100"
+            >GIMP</a
+          >
+        </li>
+        <li class="text-yellow-300">
+          <a
+            href="/pages/inkscape.html"
+            class="text-xl hover:text-red-600 font-black p-4 ease-in duration-100"
+            >Inkscape</a
+          >
+        </li>
+        <li class="">
+          <a
+            href="/pages/cnc.html"
+            class="text-xl hover:text-red-600 font-black p-4 ease-in duration-100"
+            >CNC (način rada)</a
+          >
+        </li>
+      </ul>
+    </div>
+    <a href="/">
+      <span
+        class="text-xl hover:text-red-600 font-black bg-red-500 p-4 rounded-br-3xl hover:bg-red-400 hover:border-4 hover:border-red-600 ease-in duration-100 absolute top-0 left-0"
+        >3D SLOVA</span
+      >
+    </a>
+  </div>
+</nav>
+</header>
+  <body>
+    <div class="bg-red-50">
+  <div class="flex justify-start ml-6 pb-8">
+    <h1 class="text-3xl font-bold mt-8">Inkscape</h1>
+  </div>
+</div>
+
+<div class="flex flex-col">
+  <div class="bg-red-100">
+    <div class="mx-8 p-3">
+      <h2 class="text-2xl mb-1">Veličina dokumenta</h2>
+      <p class="text-lg ml-4">Veličina dokumenta treba da bude 400x400 cm.</p>
+    </div>
+  </div>
+  <div class="bg-red-50">
+    <div class="mx-8 p-3">
+      <h2 class="text-2xl mb-2">Trace to bitmap</h2>
+      <p class="text-lg ml-4">
+        Ova komanda pretvara rastersku sliku u vektorsku. Neophodno za dalju
+        pripremu stampe.
+      </p>
+    </div>
+  </div>
+  <div class="bg-red-100">
+    <div class="mx-8 p-3">
+      <h2 class="text-2xl mb-1">Object to path</h2>
+      <p class="text-lg ml-4">
+        Izaberi odredjeni objekat i klikni u gornjem meniju na Path, zatim
+        Object to path. Kada klikneš "n" pojavice se tačke na objektu (nodes)
+        koje omogućavaju manipulisanje objekta. Objekat mora biti pretvoren u
+        path da bi priprema bila uspešna.
+      </p>
+    </div>
+  </div>
+  <div class="bg-red-50">
+    <div class="mx-8 p-3">
+      <h2 class="text-2xl mb-2">Union/Difference</h2>
+      <p class="text-lg ml-4">
+        Kada je više objekata povezano preko union komande oni postaju jedna
+        celina. Svi objekti će naslediti boju onog objekta koji je prvi nastao.
+        Korišćenjem difference komande jedan objekat u potpunosti nestaje, pri
+        čemu se stvara praznina na mestu gde se jedan objekat sekao sa drugim.
+        Nestaće onaj objekat koji je bio ispred drugog objekta. Ovo je korisno
+        za pripremu štampe zbog toga sto zagrejana žica ne može ni u jednom
+        trenutku da stane tokom izrade oblika. Korišćenjem difference opcije
+        omogućavamo mašini da napravi oblik kao sto je npr. slovo O. Ukoliko
+        želimo da CNC napravi neku reč potrebno ju je spojiti nečim (npr. malim
+        pravougaonim oblicima) zbog gore napomenutog razloga.
+      </p>
+    </div>
+  </div>
+  <div class="bg-red-100">
+    <div class="mx-8 p-3 pb-10">
+      <h2 class="text-2xl mb-2">Korisne prečice na tastaturi</h2>
+      <div class="flex">
+        <div class="w-1/2 flex flex-col items-end">
+          <p class="ml-5 mt-1">
+            <kbd class="bg-gray-800 rounded-md p-1">Shift</kbd> +
+            <kbd class="bg-gray-800 rounded-md p-1">wheel</kbd>
+          </p>
+          <p class="ml-5 mt-2.5">
+            <kbd class="bg-gray-800 rounded-md p-1">wheel</kbd>
+          </p>
+          <p class="ml-5 mt-2.5">
+            <kbd class="bg-gray-800 rounded-md p-1">S</kbd>
+          </p>
+          <p class="ml-5 mt-2.5">
+            <kbd class="bg-gray-800 rounded-md p-1">N</kbd>
+          </p>
+          <p class="ml-5 mt-2.5">
+            <kbd class="bg-gray-800 rounded-md p-1">U</kbd>
+          </p>
+          <p class="ml-5 mt-2.5">
+            <kbd class="bg-gray-800 rounded-md p-1">Shift</kbd> +
+            <kbd class="bg-gray-800 rounded-md p-1">Click</kbd>
+          </p>
+        </div>
+        <div class="w-1/2 flex flex-col items-start justify-between">
+          <p class="ml-5 mt-1">
+            <span class="ml-5 text-md">zoom</span>
+          </p>
+          <p class="ml-5 mt-1">
+            <span class="ml-5 text-md">omogućava kretanje po canvas-u</span>
+          </p>
+          <p class="ml-5 mt-1">
+            <span class="ml-5 text-md">select</span>
+          </p>
+          <p class="ml-5 mt-1">
+            <span class="ml-5 text-md">node</span>
+          </p>
+          <p class="ml-5 mt-1">
+            <span class="ml-5 text-md">bucket</span>
+          </p>
+          <p class="ml-5 mt-1">
+            <span class="ml-5 text-md">stroke (oboji okvir objekta)</span>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="bg-red-50">
+  <div class="mx-8 p-3">
+    <h2 class="text-2xl mb-2">Konfigurisanje slike za Arduino program</h2>
+    <p class="text-lg mt-1.5 ml-4">
+      Potrebno je odrediti početnu tačku odakle će mašina krenuti sa sečenjem.
+      Klikni dvaput na oblik i zatim izaberi node koji se nalazi u donjem levom
+      uglu objekta. Kada si kliknuo na nju u gornjem meniju nadji opciju Break
+      path.
+    </p>
+    <p class="text-lg mt-1.5 ml-4">
+      Extensions > Gcodetools > Orientation points > Apply
+    </p>
+    <p class="text-lg mt-1.5 ml-4">
+      Extensions > Gcodetools > Tools library > čekiraj kružić cyllinder > Apply
+      > diameter = 1, feed rate = 400
+    </p>
+    <p class="text-lg mt-1.5 mb-4 ml-4">
+      Extensions > Gcodetools > Path to Gcode > Apply
+    </p>
+  </div>
+</div>
+
+    <footer><div
+  class="bg-red-100 "
+>
+  <div class="flex justify-start space-x-5 p-10 items-end">
+    <p class="text-xl">Kontaktirajte nas:</p>
+    <p class="text-xl text-yellow-300">duleorlovic@gmail.com</p>
+    <p class="text-xl text-yellow-300">milan.kecman270@gmail.com</p>
+  </div>
+</div>
+</footer>
+
+    <!-- This works because it's in _site folder !-->
+    <script src="/assets/js/flowbite.js"></script>
+
+    <!-- This cannot work until node_modules get included in _site folder -->
+    <!-- <script src="/node_modules/flowbite/dist/flowbite.js"></script> -->
+  </body>
+</html>

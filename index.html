@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>3D slova</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="/assets/css/main.css"
+    />
+  </head>
+
+  <header><nav class="bg-red-100 px-2 sm:px-4 py-2.5">
+  <div class="container flex flex-wrap justify-end items-center mx-auto p-6">
+    <button
+      data-collapse-toggle="mobile-menu"
+      type="button"
+      class="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+      aria-controls="mobile-menu"
+      aria-expanded="false"
+    >
+      <span class="sr-only">Open main menu</span>
+      <svg
+        class="w-6 h-6"
+        fill="currentColor"
+        viewBox="0 0 20 20"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          fill-rule="evenodd"
+          d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+          clip-rule="evenodd"
+        ></path>
+      </svg>
+      <svg
+        class="hidden w-6 h-6"
+        fill="currentColor"
+        viewBox="0 0 20 20"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          fill-rule="evenodd"
+          d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+          clip-rule="evenodd"
+        ></path>
+      </svg>
+    </button>
+    <div class="hidden w-full md:block md:w-auto" id="mobile-menu">
+      <ul
+        class="flex flex-col mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium"
+      >
+        <li class="">
+          <a
+            href="/pages/gimp.html"
+            class="text-xl hover:text-red-600 font-black p-4 ease-in duration-100"
+            >GIMP</a
+          >
+        </li>
+        <li class="">
+          <a
+            href="/pages/inkscape.html"
+            class="text-xl hover:text-red-600 font-black p-4 ease-in duration-100"
+            >Inkscape</a
+          >
+        </li>
+        <li class="">
+          <a
+            href="/pages/cnc.html"
+            class="text-xl hover:text-red-600 font-black p-4 ease-in duration-100"
+            >CNC (način rada)</a
+          >
+        </li>
+      </ul>
+    </div>
+    <a href="/">
+      <span
+        class="text-xl hover:text-red-600 font-black bg-red-500 p-4 rounded-br-3xl hover:bg-red-400 hover:border-4 hover:border-red-600 ease-in duration-100 absolute top-0 left-0"
+        >3D SLOVA</span
+      >
+    </a>
+  </div>
+</nav>
+</header>
+  <body>
+    <div class="bg-red-50">
+  <div class="flex justify-start pb-8 ml-6">
+    <h1 class="mt-8 text-3xl font-bold">3D SLOVA</h1>
+  </div>
+</div>
+<div class="bg-red-100">
+  <p class="p-3 ml-12 text-lg">
+    Pozdrav za sve! Trenutni cilj ove stranice je da služi kao podsetnik ili vodič za
+    sve one koji žele da se upuste u pripremu štampe koja će se koristiti za
+    pravljenje oblika i modela na Arduino CNC mašini.
+  </p>
+</div>
+<div class="h-screen bg-red-50"></div>
+
+    <footer><div
+  class="bg-red-100 "
+>
+  <div class="flex justify-start space-x-5 p-10 items-end">
+    <p class="text-xl">Kontaktirajte nas:</p>
+    <p class="text-xl text-yellow-300">duleorlovic@gmail.com</p>
+    <p class="text-xl text-yellow-300">milan.kecman270@gmail.com</p>
+  </div>
+</div>
+</footer>
+
+    <!-- This works because it's in _site folder !-->
+    <script src="/assets/js/flowbite.js"></script>
+
+    <!-- This cannot work until node_modules get included in _site folder -->
+    <!-- <script src="/node_modules/flowbite/dist/flowbite.js"></script> -->
+  </body>
+</html>
